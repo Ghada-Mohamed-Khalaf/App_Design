@@ -1,3 +1,4 @@
+import 'package:app_design/views/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -104,10 +105,18 @@ class SignUp extends StatelessWidget {
                 children: [
                   TextButton(onPressed: (){}, child:Text("Already have an account？",style: TextStyle(color: Colors.grey,)),
                   ),
-                  TextButton(onPressed: (){}, child:Text("Log in",style: TextStyle(color: Colors.blue,fontSize: 20),),
-                  )
 
-                ],
+        ElevatedButton(onPressed: (){  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+          return const  LogIn();
+        }));
+          },
+
+    child:Text("Log in",style: TextStyle(color: Colors.blue,fontSize: 20),),
+
+
+
+
+                ,
               )
               
               
