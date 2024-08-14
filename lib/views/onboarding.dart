@@ -9,11 +9,39 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IntroductionScreen(
-        pages: [PageViewModel(title: "Numerous free trial courses",
-        body: "Free courses for you to find your way to learning",image: BuildImage(image: "assets/images/img.png",)),
+        pages: [
+          PageViewModel(
+              title: "Numerous free trial courses",
+              body: "Free courses for you to find your way to learning",
+              image: const BuildImage(
+                image: "assets/images/img.png",
+              )),
+          PageViewModel(
+              title: "Quick and easy learning",
+              body: "Easy and fast learning at any time to help you improve various skills",
+              image: const BuildImage(
+                image: "assets/images/img_2.png",
+              )),
+          PageViewModel(
+              title: "Create your own study plan",
+              body: "Study according to the study plan, make study more motivated",
+              image: const BuildImage(
+                image: "assets/images/img_1.png",
+              )),
+        ],
+        next: const Icon(Icons.arrow_forward),
+        done: const Text(
+          "Done",
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        onDone: () {
 
+        },
+        showSkipButton: true,
 
-        ],),
+       skip: const Text("Skip"),
+
+      ),
     );
   }
 }
