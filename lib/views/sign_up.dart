@@ -92,13 +92,20 @@ class SignUp extends StatelessWidget {
 
 
 
-
-
-
                 ],
 
                 ),
+
+
               ),
+              TextButton(onPressed: (){}, child:Text("Already have an account？",style: TextStyle(color: Colors.grey),))
+              
+              
+              
+              
+              
+              
+              
             ],
           ),
         ),
