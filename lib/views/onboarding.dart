@@ -1,3 +1,4 @@
+import 'package:app_design/views/sign_up.dart';
 import 'package:app_design/widgets/build_image.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
@@ -27,7 +28,10 @@ class OnBoarding extends StatelessWidget {
               body: "Study according to the study plan, make study more motivated",
               image: const BuildImage(
                 image: "assets/images/img_1.png",
+
+
               )),
+
         ],
         next: const Icon(Icons.arrow_forward),
         done: const Text(
@@ -35,13 +39,18 @@ class OnBoarding extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         onDone: () {
-
+         Navigator.of(context).push(MaterialPageRoute(builder: (context){
+           return const SignUp();
+         }));
         },
         showSkipButton: true,
 
        skip: const Text("Skip"),
 
+
       ),
+
+
     );
   }
 }
