@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
@@ -5,6 +6,7 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool status = false ;
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -65,15 +67,38 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 40,
               ),
               Container(
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15)
+                ),
                 width: double.infinity,
                   child: MaterialButton(
+
                 onPressed: () {},
                 child: const Text("Create account",style: TextStyle(color: Colors.white),),
-                color: Colors.blue,
-              ))
+
+              )),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(children: [ Checkbox(activeColor: Colors.blue,
+
+                    value: status,
+                    onChanged: (val) {}
+                   ),
+                  Text("By creating an account you have to agree with our them & condication.",maxLines: 2,style: TextStyle(color: Colors.grey),)
+
+
+
+
+
+
+                ],
+
+                ),
+              ),
             ],
           ),
         ),
