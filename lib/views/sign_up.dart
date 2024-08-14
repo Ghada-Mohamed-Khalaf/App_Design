@@ -98,7 +98,17 @@ class SignUp extends StatelessWidget {
 
 
               ),
-              TextButton(onPressed: (){}, child:Text("Already have an account？",style: TextStyle(color: Colors.grey),))
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  TextButton(onPressed: (){}, child:Text("Already have an account？",style: TextStyle(color: Colors.grey,)),
+                  ),
+                  TextButton(onPressed: (){}, child:Text("Log in",style: TextStyle(color: Colors.blue,fontSize: 20),),
+                  )
+
+                ],
+              )
               
               
               
