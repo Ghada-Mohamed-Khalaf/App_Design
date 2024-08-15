@@ -57,7 +57,7 @@ class SignUp extends StatelessWidget {
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                  suffixIcon: Icon(Icons.visibility_off),
+                  suffixIcon: const Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
 
                     borderRadius: BorderRadius.circular(16),
@@ -89,7 +89,7 @@ class SignUp extends StatelessWidget {
                     value: status,
                     onChanged: (val) {}
                    ),
-                  Text("By creating an account you have to agree with our them & condication.",maxLines: 2,style: TextStyle(color: Colors.grey),)
+                  const Text("By creating an account you have to agree with our them & condication.",maxLines: 2,style: TextStyle(color: Colors.grey),)
 
 
 
@@ -103,31 +103,26 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  TextButton(onPressed: (){}, child:Text("Already have an account？",style: TextStyle(color: Colors.grey,)),
+                  TextButton(onPressed: (){}, child:const Text("Already have an account？",style: TextStyle(color: Colors.grey,)),
                   ),
 
-        ElevatedButton(onPressed: (){  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                  TextButton (onPressed: (){  Navigator.of(context).push(MaterialPageRoute(builder: (context){
           return const  LogIn();
         }));
           },
 
-    child:Text("Log in",style: TextStyle(color: Colors.blue,fontSize: 20),),
+    child:const Text("Log in",style: TextStyle(color: Colors.blue,fontSize: 20),),
 
 
 
+              ),
 
-                ,
-              )
-              
-              
-              
-              
-              
-              
               
             ],
           ),
+          ],
         ),
+      ),
       ),
     );
   }

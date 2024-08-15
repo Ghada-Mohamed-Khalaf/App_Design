@@ -62,8 +62,15 @@ class LogIn extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 40,
+                height: 10,
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(onPressed: (){}, child: Text("Forget password ? ",style: TextStyle(color: Colors.blue),)),
+                ],
+              ),
+              SizedBox(height: 20,),
               Container(
                   decoration: BoxDecoration(
                       color: Colors.blue,
@@ -76,20 +83,25 @@ class LogIn extends StatelessWidget {
                     child: const Text("Log in ",style: TextStyle(color: Colors.white),),
 
                   )),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(children: [ ]
-                ),
-                //  Text("By creating an account you have to agree with our them & condication.",maxLines: 2,style: TextStyle(color: Colors.grey),)
 
+                Row(
+                   mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+    TextButton(onPressed: (){}, child:const Text("Don't have an account？",style: TextStyle(color: Colors.grey,)),
+    ),
 
-
-
-                ),
-
-
-            ],
+    TextButton (onPressed: (){},child:  Text("Log in ",style: TextStyle(color: Colors.blue),),
           ),
+
+],
+                ),
+
+
+
+             ],),
+
+
         ),
       ),
 
