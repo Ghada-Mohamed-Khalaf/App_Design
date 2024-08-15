@@ -91,11 +91,42 @@ class LogIn extends StatelessWidget {
     TextButton(onPressed: (){}, child:const Text("Don't have an account？",style: TextStyle(color: Colors.grey,)),
     ),
 
-    TextButton (onPressed: (){},child:  Text("Log in ",style: TextStyle(color: Colors.blue),),
+    TextButton (onPressed: (){},child:  Text("Sing up ",style: TextStyle(color: Colors.blue),),
           ),
 
 ],
                 ),
+              SizedBox(height: 20,),
+              Row(mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Divider(thickness: 0.5,height: 1.5,
+                   color: Colors.grey,
+                    ),
+                  Text("OR"),
+                  Divider(thickness: 0.5,height: 1.5,
+                     color: Colors.grey
+                    ),
+                ],
+
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [Container(
+                  child: IconButton(onPressed: (){},icon: Image(image: AssetImage("assets/images/img_3.png"),),),
+
+
+                ),
+
+                  SizedBox(width: 50,),
+                  Container(
+                    child: IconButton(onPressed: (){},icon: Image(image: AssetImage("assets/images/img_4.png"),),),
+                  ),
+                    ],
+
+              ),
+
 
 
 
