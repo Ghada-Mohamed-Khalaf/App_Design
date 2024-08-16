@@ -49,7 +49,7 @@ class LogIn extends StatelessWidget {
                 style: TextStyle(fontSize: 17),
               ),
               TextField(
-                obscureText: true,
+                 obscureText: true,
                 decoration: InputDecoration(
                   suffixIcon: Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
@@ -121,7 +121,8 @@ class LogIn extends StatelessWidget {
 
                   SizedBox(width: 50,),
                   Container(
-                    child: IconButton(onPressed: (){},icon: Image(image: AssetImage("assets/images/img_4.png"),),),
+                    child: IconButton(onPressed: (){},icon: Image(  height: 50,width: 50,
+                      image: AssetImage("assets/images/img_4.png",),),),
                   ),
                     ],
 
